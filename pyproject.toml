@@ -1,0 +1,48 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fastapi_template_new"
+version = "0.1.0"
+description = "A FastAPI project template with best practices for building scalable APIs"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+authors = [
+    {name = "Fiqih", email = "author@example.com"}
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Framework :: FastAPI",
+]
+dependencies = [
+    "fastapi>=0.95.0",
+    "uvicorn>=0.21.1",
+    "pydantic>=1.10.7",
+    "sqlalchemy>=2.0.9",
+    "alembic>=1.10.3",
+    "psycopg2-binary>=2.9.6",
+    "python-dotenv>=1.0.0",
+    "passlib>=1.7.4",
+    "python-jose>=3.3.0",
+    "bcrypt>=4.0.1",
+    "email-validator>=2.0.0",
+    "python-multipart>=0.0.6",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/fiqih/fastapi_template_new"
+"Bug Tracker" = "https://github.com/fiqih/fastapi_template_new/issues"
+
+[project.scripts]
+create-fastapi-project = "create_fastapi_project:main"
+
+[tool.setuptools]
+packages = ["app"]
+include-package-data = true
+
+[tool.uv]
+python = "3.8"
