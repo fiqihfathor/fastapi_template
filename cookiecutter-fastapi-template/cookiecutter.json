@@ -1,0 +1,17 @@
+{
+    "project_name": "fastapi_project",
+    "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}",
+    "project_description": "A FastAPI project with best practices for building scalable APIs",
+    "author_name": "Fiqih Fathor Rachim",
+    "author_email": "fiqih.fathor.rachim@gmail.com",
+    "version": "0.1.0",
+    "use_docker": ["y", "n"],
+    "use_uv": ["y", "n"],
+    "use_postgres": ["y", "n"],
+    "use_sqlalchemy": ["y", "n"],
+    "use_alembic": ["y", "n"],
+    "use_pytest": ["y", "n"],
+    "use_auth": ["y", "n"],
+    "python_version": "3.11",
+    "open_source_license": ["MIT", "BSD-3-Clause", "GNU GPL v3.0", "Apache Software License 2.0", "Not open source"]
+}

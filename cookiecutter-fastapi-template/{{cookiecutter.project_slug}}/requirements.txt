@@ -1,0 +1,21 @@
+fastapi>=0.103.0,<0.104.0
+uvicorn>=0.23.0,<0.24.0
+pydantic>=2.3.0,<2.4.0
+pydantic-settings>=2.0.3,<2.1.0
+{% if cookiecutter.use_sqlalchemy == "y" %}
+sqlalchemy>=2.0.20,<2.1.0
+{% endif %}
+{% if cookiecutter.use_postgres == "y" %}
+psycopg2-binary>=2.9.7,<2.10.0
+{% endif %}
+{% if cookiecutter.use_alembic == "y" %}
+alembic>=1.12.0,<1.13.0
+{% endif %}
+{% if cookiecutter.use_auth == "y" %}
+python-jose>=3.3.0,<3.4.0
+passlib>=1.7.4,<1.8.0
+python-multipart>=0.0.6,<0.0.7
+bcrypt>=4.0.1,<4.1.0
+{% endif %}
+email-validator>=2.0.0,<2.1.0
+httpx>=0.24.1,<0.25.0
